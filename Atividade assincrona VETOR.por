@@ -8,24 +8,31 @@ programa
 	funcao inicio()
 	{
 		inteiro x
-		real numero[5], nota, n1, n2, n3, n4, n5, mnota
+		real nota[5], notas = 0.0, maiorNota=0.0, somaNotas, mNota=0.0 
 
 		para(x=0;x<5;x++)
 		{
-			escreva("\nNota: ")
-			leia(nota)
+			escreva("\nDigite suas notas: ")
+			leia(notas)
 		}
 		
-		mnota = 
-		escreva("\nA maior nota é: ")	
+		se(mNota>notas)
+		mNota = notas
+		escreva("\nA maior nota é: ",mNota)	
+
+		para(x=0;x<5;x++)
+		{
+			escreva("[",nota[x], "] ")
+		}
 		}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 56; 
+ * @POSICAO-CURSOR = 379; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
