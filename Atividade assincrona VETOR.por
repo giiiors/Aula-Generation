@@ -7,22 +7,12 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro x
-		real nota[5], notas = 0.0, maiorNota=0.0, somaNotas, mNota=0.0 
+	inteiro notas
 
-		para(x=0;x<5;x++)
-		{
-			escreva("\nDigite suas notas: ")
-			leia(notas)
-		}
-		
-		se(mNota>notas)
-		mNota = notas
-		escreva("\nA maior nota é: ",mNota)	
-
-		para(x=0;x<5;x++)
-		{
-			escreva("[",nota[x], "] ")
+	para(inteiro cont = 1; cont <= 5; cont++)
+	{
+	escreva("\nDigite sua ", cont, "° nota: ")
+	leia(notas)	
 		}
 		}
 }
@@ -32,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 379; 
+ * @POSICAO-CURSOR = 326; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
