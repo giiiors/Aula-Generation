@@ -1,34 +1,29 @@
 programa
 {
-	inclua biblioteca Matematica-->mat
-
+	// VETOR = unidimensional = na mesma linha
+	// crie um vetor com 5 valores de pontuação de uma atividade
+	// mostre as pontuações
+	// encontre a maior pontuação e apresente
 	
 	funcao inicio()
 	{
-		inteiro a, b, c
-		real r, s, d
+	inteiro notas, maiorNota, menorNota
 
-		escreva("\nEntre com o valor de A")
-		leia(a)
-		escreva("\nEntre com o valor de B")
-		leia(b)
-		escreva("\nEntre com o valor de C")
-		leia(c)
+	para(inteiro cont = 1; cont <= 5; cont++)
+	{
+	escreva("\nDigite sua ", cont, "° nota: ")
+	leia(notas)	
 
-		d = (mat.potencial((a+b),2.0)+mat.potencia((b+c),2.0)) / 2
-
-		escreva("\nO valor de D foi:")
-		
-
-		
-	}
+		}
+		}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 264; 
+ * @POSICAO-CURSOR = 349; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
