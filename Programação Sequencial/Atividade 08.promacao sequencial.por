@@ -1,26 +1,20 @@
 programa
 {
-	
+	inclua biblioteca Matematica --> math
 	funcao inicio()
 	
-	{	inteiro custofabrica, carronovo
-		real distribuidor, impostos
-				
-		escreva("\nQuanto custa um carro de fábrica?")
-		leia(custofabrica) // 10.000
-		escreva("\nQuanto custa a percentagem do distribuidor?")
-		leia(distribuidor) // 0.28 
-		escreva("Quanto custa os impostos?")
-		leia(impostos) // 0.45
+	{	inteiro custofabrica
+		real distribuidor, impostos, carroNovo=0.0
 		
-		escreva("\nDistribuidor = (10.000 * 0.28) = 2.800")
-		escreva("\nImpostos = (10.000 * 0.45) = 4.500")
+	
+		escreva("Diga o custo de fabricação de um carro: ")
+		leia(custofabrica)
 		
-				
-		escreva("\nQuanto custa um carro novo ao consumidor?")
-		leia(carronovo) // distribuidor + impostos + valor de fábrica 17.300
-		
-		
+		distribuidor = custofabrica * 0.28
+		impostos = custofabrica * 0.45
+		carroNovo = custofabrica + distribuidor + impostos
+
+		escreva("Custo de um carro novo: ", math.arredondar(carroNovo, 2))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -28,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 444; 
+ * @POSICAO-CURSOR = 49; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

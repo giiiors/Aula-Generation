@@ -17,7 +17,7 @@ programa
 
 		d = (mat.potencia((a+b),2.0)+mat.potencia((b+c),2.0)) / 2
 
-		escreva("\nO valor de D foi:")
+		escreva("\nO valor de D foi: ",d,"5 ")
 		
 
 		
@@ -28,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 241; 
+ * @POSICAO-CURSOR = 314; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

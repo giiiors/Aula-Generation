@@ -1,50 +1,36 @@
 programa
 {
-	inclua biblioteca Matematica --> mat
 	
  	//6. Construa um programa em c que, tendo como dados de entrada dois pontos quaisquer no plano, P(x1, y1) e P(x2, y2), 
  	//escreva a distância entre eles. A fórmula que efetua tal cálculo é: d= raiz quadrada da ((x2-x1)^2 + (y2-y1)^2.
- 	
+ 	inclua biblioteca Matematica --> math
 	
 	funcao inicio()
 	{
+		real x1, x2, y1, y2, result = 0.0
+		escreva("Escreva a coordenada de dois pontos\n")
+		escreva("X do ponto 1: ")
+		leia(x1)
+		escreva("Y do ponto 1: ")
+		leia(y1)
+		escreva("X do ponto 2: ")
+		leia(x2)
+		escreva("Y do ponto 2: ")
+		leia(y2)
 
-	real x1, x2, y1, y2, d, xx, yy, xy
+		result = math.raiz((math.potencia(x2 - x1, 2.0)) + (math.potencia(y2 - y1, 2.0)), 2.0)
 
-	escreva("\nEscreva o valor de x no ponto 1")
-	leia(x1)
-	
-	escreva("\nEscreva o valor de y no ponto 1")
-	leia(y1)
-
-	escreva("\nEscreva o valor de x no ponto 2")
-	leia(x2)
-
-	escreva("\nEscreva o valor de y no ponto 2")
-	leia(y2)
-
-
-	xx=(x2-x1) ^2
-	leia(xx)
-	yy= (y2-y1)^2
-	leia(yy)
-	xy= xx + yy
-	leia(xy)
-
-	d= mat.raiz(xy, 2)
-	leia(d)
-
-	escreva("\nO valor da distancia entre o P1 e o P2 é de: ",d)
-
+		escreva("O resultado é: ", math.arredondar(result, 2))
 		
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 585; 
+ * @POSICAO-CURSOR = 505; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

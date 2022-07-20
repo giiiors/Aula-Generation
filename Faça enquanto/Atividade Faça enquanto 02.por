@@ -10,7 +10,7 @@ programa
 		c=num
 		x=0
 		
-		escreva("A soma dos numeros no intervalo entre| 1 e ", num, " é: ")
+		escreva("A soma dos numeros no intervalo entre 1 e ", num, " é: ")
 		faca
 		
 		{
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 59; 
+ * @POSICAO-CURSOR = 164; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
